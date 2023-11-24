@@ -1,0 +1,183 @@
+@import url(./reset.css);
+
+body {
+  background: #ffffff;
+}
+
+.grid-principal > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-principal {
+  display: grid;
+  width: 1440px;
+  height: 1024px;
+  grid-template-rows: 56px repeat(3, 1fr) auto;
+  grid-template-columns: 218px repeat(4, 1fr) auto;
+  gap: 10px;
+}
+
+.header-menu {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.sidebar {
+  grid-row: 2 / -1;
+}
+
+.conteudos {
+  grid-column: 2 / -1;
+}
+
+.item {
+  width: 282px;
+  height: 262px;
+  padding: 16px;
+  border-radius: 4px;
+  gap: 1rem;
+}
+
+/*Aqui esta sendo feito o css do Header*/
+.header-menu {
+  height: 56px;
+  padding: 0px, 24px, 0px, 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  width: 146px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+#menu {
+  height: 24px;
+  margin-top: 16px;
+  margin-left: 24px;
+  padding: 6px, 3px, 6px, 3px;
+}
+
+#img-youtube {
+  width: 90px;
+  height: 20px;
+  margin-top: 18px;
+  margin-left: 80px;
+}
+
+.center {
+  width: 404px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+#img-pesquisa {
+  border: 1px;
+  margin-top: 8px;
+  margin-left: 346px;
+}
+
+.rigth {
+  width: Hug (130px);
+  height: Hug (34px);
+  display: flex;
+}
+
+#img-video {
+  width: 24px;
+  height: 24px;
+  border: 1px;
+  margin-left: 700px;
+  margin-top: 12px;
+  padding: 10px;
+}
+
+#img-bell {
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+#img-avatar {
+  width: 34px;
+  height: 34px;
+  padding: 2px, 3px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/*Aqui começei a fazer o css do sidebar*/
+.sidebar {
+  width: 218px;
+  height: 968px;
+  margin-left: 15px;
+  padding: 24px;
+  gap: 22px;
+}
+
+.item-01 > p {
+  display: inline-grid;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.sidebar svg {
+  margin-top: 25px;
+}
+
+/*Aqui começei a fazer o css dos main*/
+.grid-principal > main {
+  display: grid;
+  grid-auto-rows: auto;
+  margin-left: 140px;
+  margin-top: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+iframe {
+  width: 250px;
+  height: 140.29px;
+}
+
+.total {
+  display: flex;
+  margin: 10px;
+}
+
+.text {
+  width: 197px;
+  height: 74px;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+h2 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h3 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 10px;
+}
